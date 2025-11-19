@@ -1,0 +1,39 @@
+.todo-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  .todo-stats {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+}

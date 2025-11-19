@@ -1,0 +1,39 @@
+.todo-filter {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--background);
+  padding: 0.25rem;
+  border-radius: 8px;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.filter-button:hover {
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.filter-button.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .todo-filter {
+    width: 100%;
+  }
+
+  .filter-button {
+    flex: 1;
+  }
+}
