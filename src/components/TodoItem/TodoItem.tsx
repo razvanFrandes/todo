@@ -16,7 +16,6 @@ export const TodoItem = ({ todo, onToggle, onDelete }: TodoItemProps) => {
           checked={todo.completed}
           onChange={() => onToggle(todo.id)}
           className="todo-checkbox"
-          aria-label={`Mark "${todo.text}" as ${todo.completed ? 'incomplete' : 'complete'}`}
         />
         <span className="todo-text">{todo.text}</span>
       </div>
